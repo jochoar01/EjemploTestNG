@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ESPNQA">
+    <listeners>
+        <listener class-name="com.academy.tae.utils.listeners.BaseListener"/>
+    </listeners>
+    <parameter name="browser" value="chrome"/>
+    <test thread-count="5" name="UserBehavior">
+        <packages>
+            <package name="com.academy.tae.login"/>
+            <package name="com.academy.tae.logout"/>
+            <package name="com.academy.tae.disable_account"/>
+        </packages>
+    </test> <!-- LoginTests -->
+</suite> <!-- ESPNQA -->
